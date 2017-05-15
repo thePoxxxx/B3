@@ -31,6 +31,11 @@
             <a-asset-item id="Haus" Src="3D Obj/Haus.obj"></a-asset-item>
             <a-asset-item id="A" Src="3D Obj/BBJ.obj"></a-asset-item>
 
+            <a-asset-item id='C1' Src='C_01.DAE'></a-asset-item>
+            <a-asset-item id='C2' Src='C_02.DAE'></a-asset-item>
+            <a-asset-item id='C3' Src='C_03.DAE'></a-asset-item>
+
+
             <!-- L O A D - C O L L I S I O N - M E S H E S -->
             <a-asset-item id="Collision" Src="3D Obj/Collision_Mesh.obj"></a-asset-item>
 
@@ -74,6 +79,9 @@
           <a-obj-model src='#Haus' mtl='#Haus_m' n-mesh-collider='type: environment; convex: false'></a-obj-model>
           <a-obj-model src='#A' mtl='#A_m' n-mesh-collider='type: environment; convex: false'></a-obj-model>
 
+          <a-obj-model src='#C1'></a-obj-model>
+          <a-obj-model src='#C2'></a-obj-model>
+          <a-obj-model src='#C3'></a-obj-model>
 
           <!-- COLLISION -->
           <a-obj-model src='#Collision'n-mesh-collider='type: environment; convex: false' material='transparent: true; opacity: 0' ></a-obj-model>
