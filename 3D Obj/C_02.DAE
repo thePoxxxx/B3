@@ -31,24 +31,6 @@
                 </extra>
               </texture>
             </diffuse>
-            <specular>
-              <color sid="specular">0.247059  0.248471 0.231529 1.000000</color>
-            </specular>
-            <shininess>
-              <float sid="shininess">4.924578</float>
-            </shininess>
-            <reflective>
-              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
-            </reflective>
-            <reflectivity>
-              <float sid="reflectivity">1.000000</float>
-            </reflectivity>
-            <transparent opaque="RGB_ZERO">
-              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
-            </transparent>
-            <transparency>
-              <float sid="transparency">0.000000</float>
-            </transparency>
           </phong>
         </technique>
       </profile_COMMON>
