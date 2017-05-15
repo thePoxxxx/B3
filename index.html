@@ -58,6 +58,10 @@
             <a-asset-item id="Haus_m" Src="3D Obj/Haus.mtl"></a-asset-item>
             <a-asset-item id="A_m" Src="3D Obj/BBJ.mtl"></a-asset-item>
 
+            <a-asset-item id="C_2" Src="3D Obj/steel.png"></a-asset-item>
+            <a-asset-item id="C_1" Src="3D Obj/panel scuff.png"></a-asset-item>
+
+
           </a-assets>
 
           <!-- A S S E T - P L A C E M E N T -->
@@ -79,8 +83,8 @@
           <a-obj-model src='#Haus' mtl='#Haus_m' n-mesh-collider='type: environment; convex: false'></a-obj-model>
           <a-obj-model src='#A' mtl='#A_m' n-mesh-collider='type: environment; convex: false'></a-obj-model>
 
-          <a-collada-model src='#C1'></a-collada-model>
-          <a-collada-model src='#C2'></a-collada-model>
+          <a-collada-model src='#C1' mtl='#C_1_m'></a-collada-model>
+          <a-collada-model src='#C2' mtl='#C_2_m'></a-collada-model>
           <a-collada-model src='#C3'></a-collada-model>
 
           <!-- COLLISION -->
