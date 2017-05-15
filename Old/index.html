@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    
+    <!-- S C R I P T - L O A D I N G -->
+    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+    <script src="https://sdk.altvr.com/libs/altspace.js/2.4.4/altspace.min.js"></script>
+
+    <!-- S C E N E - S E T U P -->
+    <a-scene altspace="verticalAlign: center;">
+
+          <!-- A S S E T S - P R E L O A D - A R E A -->
+          <a-assets>
+                  <!-- L O A D - 3 D - M O D E L S -->
+                  <a-asset-item id='C1' Src='C_01.dae'></a-asset-item>
+                  <a-asset-item id='C2' Src='C_02.dae'></a-asset-item>
+                  <a-asset-item id='C3' Src='C_03.dae'></a-asset-item>
+
+                  <!-- L O A D - T E X T U R E S -->
+                  <a-asset-item id='C_Illu' src='test.jpg'></a-asset-item>
+
+
+                  <!--<img id='Sky_ID' src='sky/stars.jpg'/>-->
+          </a-assets>
+
+
+          <!-- A S S E T - P L A C E M E N T -->
+          <a-obj-model src='#C1'position='0 0 0'></a-obj-model>
+          <a-obj-model src='#C2'position='0 0 0'></a-obj-model>
+          <a-obj-model src='#C3'position='0 0 0'></a-obj-model>
+
+
+          <!-- A D D - S K Y - T O - S C E N E -->
+          <!--<a-sky src='#Sky_ID' radius='2000' rotation ='0 -115 0' position='0 15 0'></a-sky>-->
+
+      </a-scene>
+  </body>
+</html>
