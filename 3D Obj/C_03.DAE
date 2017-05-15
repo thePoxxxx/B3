@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
-  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2017-05-15T00:54:57Z</created><keywords></keywords><modified>2017-05-15T00:54:57Z</modified><revision></revision><subject></subject><title></title><unit meter="1.000000" name="centimeter"></unit><up_axis>Y_UP</up_axis></asset>
+  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2017-05-14T23:10:28Z</created><keywords></keywords><modified>2017-05-14T23:10:28Z</modified><revision></revision><subject></subject><title></title><unit meter="1.000000" name="centimeter"></unit><up_axis>Y_UP</up_axis></asset>
   <library_materials>
     <material id="Light" name="Light">
       <instance_effect url="#Light-fx"/>
@@ -169,7 +169,7 @@
   </library_geometries>
   <library_visual_scenes>
     <visual_scene id="C_03" name="C_03">
-      <node name="Corner1_3" id="Corner1_3" sid="Corner1_3"><matrix sid="matrix">0.007186 0.000000 0.000000 9.831873 0.000000 0.000000 0.007186 0.178322 0.000000 -0.007186 0.000000 -14.460032 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#Corner1_3-lib"><bind_material><technique_common><instance_material symbol="Light" target="#Light"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
+      <node name="Corner1_3" id="Corner1_3" sid="Corner1_3"><matrix sid="matrix">0.025400 0.000000 0.000000 0.000000 0.000000 0.000000 0.025400 0.000000 0.000000 -0.025400 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#Corner1_3-lib"><bind_material><technique_common><instance_material symbol="Light" target="#Light"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
       <extra><technique profile="MAX3D"><frame_rate>30.000000</frame_rate></technique><technique profile="FCOLLADA"><start_time>0.000000</start_time><end_time>3.333333</end_time></technique></extra>
     </visual_scene>
   </library_visual_scenes>
