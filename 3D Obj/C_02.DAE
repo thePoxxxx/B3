@@ -21,7 +21,7 @@
               <color sid="ambient">0.588235  0.588235 0.588235 1.000000</color>
             </ambient>
             <diffuse>
-              <texture texture="Map #1-image" texcoord="CHANNEL0">
+              <texture texture="Map #1-image" texcoord="CHANNEL1">
                 <extra>
                   <technique profile="MAYA">
                     <wrapU sid="wrapU0">TRUE</wrapU>
