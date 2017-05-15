@@ -35,18 +35,6 @@
             <a-asset-item id="Collision" Src="3D Obj/Collision_Mesh.obj"></a-asset-item>
 
 
-            <!-- L O A D - C O L L A D A - M E S H E S -->
-            <a-asset-item id='C1' Src='3D Obj/C_01.DAE'></a-asset-item>
-            <a-asset-item id='C2' Src='3D Obj/C_02.DAE'></a-asset-item>
-            <a-asset-item id='C3' Src='3D Obj/C_03.DAE'></a-asset-item>
-
-            <!-- P L A C E - T H O S E - C O L L A D A - F U C K S-->
-            <a-collada-model src='#C1' mtl='#Main_Stairs_m'></a-collada-model>
-            <a-collada-model src='#C2' mtl='#Main_Stairs_m'></a-collada-model>
-            <a-collada-model src='#C3' mtl='#Main_Stairs_m'></a-collada-model>
-
-
-
             <!-- L O A D - T E X T U R E S -->
             <a-asset-item id="GroundPlate_texture" Src="3D Obj/GroundPlate.mtl"></a-asset-item>
             <a-asset-item id="Main_Body_m" Src="3D Obj/Main_Body.mtl" ></a-asset-item>
@@ -68,23 +56,23 @@
           </a-assets>
 
           <!-- A S S E T - P L A C E M E N T -->
-          <!-- INGAME GEOMETRY-->
-          <a-obj-model src='#GroundPlate' mtl='#GroundPlate_texture'></a-obj-model>
-          <a-obj-model src='#Main_Body' mtl='#Main_Body_m'></a-obj-model>
-          <a-obj-model src='#Main_Stairs' mtl='#Main_Stairs_m' ></a-obj-model>
-          <a-obj-model src='#Pillars_R' mtl='#test_m'></a-obj-model>
-          <a-obj-model src='#Pillars_R2' mtl='#test2_m'></a-obj-model>
-          <a-obj-model src='#Dachbalken' mtl='#Dachbalken_m'></a-obj-model>
-          <a-obj-model src='#Pillars_M' mtl='#testM_m'></a-obj-model>
-          <a-obj-model src='#Podest_R' mtl='#Podest_m'></a-obj-model>
-          <a-obj-model src='#roof' mtl='#roof_m'></a-obj-model>
-          <a-obj-model src='#Zaun_RA' mtl='#Zaun_RA_m'></a-obj-model>
-          <a-obj-model src='#Zaun_RB' mtl='#Zaun_RB_m'></a-obj-model>
-          <a-obj-model src='#Zaun_LA' mtl='#Zaun_LA_m'></a-obj-model>
-          <a-obj-model src='#Zaun_LB' mtl='#Zaun_LB_m'></a-obj-model>
-          <a-obj-model src='#Podest_L' mtl='#Podest_L_m'></a-obj-model>
-          <a-obj-model src='#Haus' mtl='#Haus_m'></a-obj-model>
-          <a-obj-model src='#A' mtl='#A_m'></a-obj-model>
+          <!-- INGAME GEOMETRY -->
+          <a-obj-model src='#GroundPlate' mtl='#GroundPlate_texture' 'n-mesh-collider='type: environment; convex: false' ></a-obj-model>
+          <a-obj-model src='#Main_Body' mtl='#Main_Body_m' 'n-mesh-collider='type: environment; convex: false' ></a-obj-model>
+          <a-obj-model src='#Main_Stairs' mtl='#Main_Stairs_m' 'n-mesh-collider='type: environment; convex: false'></a-obj-model>
+          <a-obj-model src='#Pillars_R' mtl='#test_m' 'n-mesh-collider='type: environment; convex: false' ></a-obj-model>
+          <a-obj-model src='#Pillars_R2' mtl='#test2_m' 'n-mesh-collider='type: environment; convex: false'></a-obj-model>
+          <a-obj-model src='#Dachbalken' mtl='#Dachbalken_m' 'n-mesh-collider='type: environment; convex: false' ></a-obj-model>
+          <a-obj-model src='#Pillars_M' mtl='#testM_m' 'n-mesh-collider='type: environment; convex: false' ></a-obj-model>
+          <a-obj-model src='#Podest_R' mtl='#Podest_m' 'n-mesh-collider='type: environment; convex: false' ></a-obj-model>
+          <a-obj-model src='#roof' mtl='#roof_m' 'n-mesh-collider='type: environment; convex: false' ></a-obj-model>
+          <a-obj-model src='#Zaun_RA' mtl='#Zaun_RA_m' 'n-mesh-collider='type: environment; convex: false' ></a-obj-model>
+          <a-obj-model src='#Zaun_RB' mtl='#Zaun_RB_m' 'n-mesh-collider='type: environment; convex: false' ></a-obj-model>
+          <a-obj-model src='#Zaun_LA' mtl='#Zaun_LA_m' 'n-mesh-collider='type: environment; convex: false' ></a-obj-model>
+          <a-obj-model src='#Zaun_LB' mtl='#Zaun_LB_m' 'n-mesh-collider='type: environment; convex: false'></a-obj-model>
+          <a-obj-model src='#Podest_L' mtl='#Podest_L_m' 'n-mesh-collider='type: environment; convex: false'></a-obj-model>
+          <a-obj-model src='#Haus' mtl='#Haus_m' 'n-mesh-collider='type: environment; convex: false'></a-obj-model>
+          <a-obj-model src='#A' mtl='#A_m' 'n-mesh-collider='type: environment; convex: false'></a-obj-model>
 
 
           <!-- COLLISION -->
