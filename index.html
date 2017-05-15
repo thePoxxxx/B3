@@ -15,8 +15,7 @@
 
             <!-- L O A D - 3 D - M O D E L S -->
             <a-asset-item id="GroundPlate" Src="3D Obj/GroundPlate.obj"></a-asset-item>
-
-            <!--<a-asset-item id='Q' Src=''></a-asset-item>-->
+            <a-asset-item id='Q' Src='3D Obj/Test.DAE'></a-asset-item>
 
             <!-- L O A D - T E X T U R E S -->
             <a-asset-item id="GroundPlate_texture" Src="3D Obj/GroundPlate.mtl"></a-asset-item>
@@ -28,9 +27,7 @@
           <!-- A S S E T - P L A C E M E N T -->
           <!-- INGAME GEOMETRY -->
           <a-obj-model src='#GroundPlate' mtl='#GroundPlate_texture' n-mesh-collider='type: environment; convex: false'></a-obj-model>
-
-
-          <!--<a-collada-model src='#C3'></a-collada-model>-->
+          <a-collada-model src='#Q'></a-collada-model>
 
       </a-scene>
   </body>
