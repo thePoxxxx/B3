@@ -20,14 +20,11 @@
             <!-- L O A D - T E X T U R E S -->
             <a-asset-item id="GroundPlate_texture" Src="3D Obj/GroundPlate.mtl"></a-asset-item>
 
-
-
           </a-assets>
 
           <!-- A S S E T - P L A C E M E N T -->
-          <!-- INGAME GEOMETRY -->
           <a-obj-model src='#GroundPlate' mtl='#GroundPlate_texture' n-mesh-collider='type: environment; convex: false'></a-obj-model>
-          <a-collada-model src='#Q'></a-collada-model>
+          <a-collada-model src='#Q'mtl='#GroundPlate_texture'></a-collada-model>
 
       </a-scene>
   </body>
