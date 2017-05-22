@@ -12,7 +12,7 @@
 
   <script>
     	var sim = new altspace.utilities.Simulation();
-    	/*sim.camera.position.set(0, 1.5, 5);*/
+    	sim.camera.position.set(0, 1.5, 5);
     	if(altspace.inClient){
     		altspace.getEnclosure().then(function(enc){
     			sim.scene.scale.setScalar(enc.pixelsPerMeter);
