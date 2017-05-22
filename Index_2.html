@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- S C R I P T - L O A D I N G -->
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.js'></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/r69/examples/js/loaders/ColladaLoader.js"></script>
+    <script src="https://sdk.altvr.com/libs/altspace.js/2.4.4/altspace.min.js"></script>
+  </head>
+
+      <body>
+
+  <script>
+    	var sim = new altspace.utilities.Simulation();
+    	sim.camera.position.set(0, 1.5, 5);
+    	if(altspace.inClient){
+    		altspace.getEnclosure().then(function(enc){
+    			sim.scene.scale.setScalar(enc.pixelsPerMeter);
+    		});
+    	}
+    	var model = null, lightmap = null;
+
+
+    	// load model
+    	var gltfLoader = new THREE.ColladaLoader();
+    	gltfLoader.load('C_02.DAE',
+    		function(result){
+    			sim.scene.add(result.scene);
+    			model = result.scene;
+    			loadingDone();
+    		},
+    		undefined,
+    		function(err){
+    			console.error(err);
+    		}
+    	);
+
+
+
+      // load texture
+    /*	var txLoader = new THREE.TextureLoader();
+    	txLoader.load('C_01_L.jpg', function(tex){
+    		// gltf models need this field to be false
+    		// GLTFLoader does it for the diffuse texture automatically
+    		tex.flipY = false;
+    		lightmap = tex;
+    		loadingDone();
+    	}); */
+
+
+    	// model and texture loaded, start mapping
+    	function loadingDone()
+    	{
+    		if( !model || !lightmap ) return;
+    		//model.position.setY(-1.2);
+    		//model.rotateY(Math.PI);
+        //model.rotateX(90);
+    		var C1_2 = model.getObjectByName('Corner1_2');
+    		C1_2.children[0].material.lightMap = lightmap;
+    	}
+
+    </script>
+
+      </body>
+    </html>
