@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Poxxxx</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.6;  Revision: 47</authoring_tool>
+      <source_data>file:///C:/Users/Poxxxx/Documents/Learning/scenes/Pillar.max</source_data>
+    </contributor>
+    <created>2017-05-22T03:49:58</created>
+    <modified>2017-05-22T03:49:58</modified>
+    <unit name="inch" meter="0.0254"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Light">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>1 1 1 1</color>
+            </ambient>
+            <diffuse>
+              <color>1 1 1 1</color>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>9.999999</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">1</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="Light-material" name="Light">
+      <instance_effect url="#Light"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-Corner1_3" name="Corner1_3">
+      <mesh>
+        <source id="geom-Corner1_3-positions">
+          <float_array id="geom-Corner1_3-positions-array" count="48">-1282.648 -2183.395 154.9999 -1347.648 -2191.78 154.9999 -1282.648 -2191.78 154.9999 -1347.648 -2183.395 154.9999 -1282.648 -1840.944 154.9999 -1347.648 -1849.328 154.9999 -1282.648 -1849.328 154.9999 -1347.648 -1840.944 154.9999 -1490.566 -1983.862 154.9999 -1482.182 -2048.862 154.9999 -1482.182 -1983.862 154.9999 -1490.566 -2048.862 154.9999 -1148.115 -1983.862 154.9999 -1139.731 -2048.862 154.9999 -1139.731 -1983.862 154.9999 -1148.115 -2048.862 154.9999</float_array>
+          <technique_common>
+            <accessor source="#geom-Corner1_3-positions-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Corner1_3-normals">
+          <float_array id="geom-Corner1_3-normals-array" count="48">0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#geom-Corner1_3-normals-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Corner1_3-map1">
+          <float_array id="geom-Corner1_3-map1-array" count="48">1.192908 -0.25 0 1.192908 1.25 0 1.192908 -0.25 0 1.192908 1.25 0 1.192908 -0.25 0 1.192908 1.25 0 1.192908 -0.25 0 1.192908 1.25 0 1.192908 -0.25 0 1.192908 1.25 0 1.192908 -0.25 0 1.192908 1.25 0 1.192908 -0.25 0 1.192908 1.25 0 1.192908 -0.25 0 1.192908 1.25 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Corner1_3-map1-array" count="16" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Corner1_3-map2">
+          <float_array id="geom-Corner1_3-map2-array" count="48">0.9689809 0.3230409 0 0.9171037 0.3230409 0 0.9689809 0.3163494 0 0.9171037 0.3163494 0 0.9870824 0.5050122 0 0.9352052 0.5050122 0 0.9870824 0.4983208 0 0.9352052 0.4983208 0 0.9801983 0.6442327 0 0.9283212 0.6442327 0 0.9801983 0.6375412 0 0.9283212 0.6375412 0 0.372436 0.930094 0 0.3205588 0.930094 0 0.372436 0.9234025 0 0.3205588 0.9234025 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Corner1_3-map2-array" count="16" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Corner1_3-vertices">
+          <input semantic="POSITION" source="#geom-Corner1_3-positions"/>
+        </vertices>
+        <triangles material="Light" count="8">
+          <input semantic="VERTEX" source="#geom-Corner1_3-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Corner1_3-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Corner1_3-map1" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-Corner1_3-map2" offset="3" set="1"/>
+          <p>15 0 15 12 12 1 12 13 13 2 13 14 14 3 14 15 13 2 13 14 12 1 12 13 11 4 11 8 8 5 8 9 9 6 9 10 10 7 10 11 9 6 9 10 8 5 8 9 7 8 7 4 4 9 4 5 5 10 5 6 6 11 6 7 5 10 5 6 4 9 4 5 3 12 3 0 0 13 0 1 1 14 1 2 2 15 2 3 1 14 1 2 0 13 0 1</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight"/>
+      </node>
+      <node id="node-Corner1_3" name="Corner1_3">
+        <matrix>1 0 0 1331.326 0 1 0 2015.112 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#geom-Corner1_3">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Light" target="#Light-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="int">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="int">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene"/>
+  </scene>
+</COLLADA>
