@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
-  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2017-05-15T13:02:34Z</created><keywords></keywords><modified>2017-05-15T13:02:34Z</modified><revision></revision><subject></subject><title></title><unit meter="1.000000" name="centimeter"></unit><up_axis>Y_UP</up_axis></asset>
+  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2017-05-22T01:24:32Z</created><keywords></keywords><modified>2017-05-22T01:24:32Z</modified><revision></revision><subject></subject><title></title><unit meter="0.025400" name="centimeter"></unit><up_axis>Y_UP</up_axis></asset>
   <library_images>
-    <image id="Map #1-image" name="Map #1"><init_from>GroundPlate_Dif.jpg</init_from></image>
+    <image id="Map #1-image" name="Map #1"><init_from>file://D:\Github\B3\3D Obj\GroundPlate_Dif.jpg</init_from></image>
   </library_images>
   <library_materials>
     <material id="_01 - Default" name="_01 - Default">
@@ -21,7 +21,7 @@
               <color sid="ambient">0.588235  0.588235 0.588235 1.000000</color>
             </ambient>
             <diffuse>
-              <texture texture="Map #1-image" texcoord="CHANNEL1">
+              <texture texture="Map #1-image" texcoord="CHANNEL0">
                 <extra>
                   <technique profile="MAYA">
                     <wrapU sid="wrapU0">TRUE</wrapU>
@@ -58,18 +58,34 @@
     <geometry id="Box001-lib" name="Box001Mesh">
       <mesh>
         <source id="Box001-POSITION">
-          <float_array id="Box001-POSITION-array" count="24">
--26.685257 -34.424900 0.000000
-26.685257 -34.424900 0.000000
--26.685257 34.424900 0.000000
-26.685257 34.424900 0.000000
--26.685257 -34.424900 50.786678
-26.685257 -34.424900 50.786678
--26.685257 34.424900 50.786678
-26.685257 34.424900 50.786678
+          <float_array id="Box001-POSITION-array" count="72">
+-20.041319 -18.345419 0.000000
+20.041319 -18.345419 0.000000
+-20.041319 18.345419 0.000000
+20.041319 18.345419 0.000000
+-20.041319 -18.345419 39.608387
+20.041319 -18.345419 39.608387
+-20.041319 18.345419 39.608387
+20.041319 18.345419 39.608387
+-20.041319 -18.345419 0.000000
+20.041319 -18.345419 0.000000
+20.041319 -18.345419 39.608387
+-20.041319 -18.345419 39.608387
+20.041319 -18.345419 0.000000
+20.041319 18.345419 0.000000
+20.041319 18.345419 39.608387
+20.041319 -18.345419 39.608387
+20.041319 18.345419 0.000000
+-20.041319 18.345419 0.000000
+-20.041319 18.345419 39.608387
+20.041319 18.345419 39.608387
+-20.041319 18.345419 0.000000
+-20.041319 -18.345419 0.000000
+-20.041319 -18.345419 39.608387
+-20.041319 18.345419 39.608387
 </float_array>
           <technique_common>
-            <accessor source="#Box001-POSITION-array" count="8" stride="3">
+            <accessor source="#Box001-POSITION-array" count="24" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
@@ -77,9 +93,7 @@
           </technique_common>
         </source>
         <source id="Box001-Normal0">
-          <float_array id="Box001-Normal0-array" count="108">
-0.000000 0.000000 -1.000000
-0.000000 0.000000 -1.000000
+          <float_array id="Box001-Normal0-array" count="72">
 0.000000 0.000000 -1.000000
 0.000000 0.000000 -1.000000
 0.000000 0.000000 -1.000000
@@ -88,10 +102,6 @@
 0.000000 0.000000 1.000000
 0.000000 0.000000 1.000000
 0.000000 0.000000 1.000000
-0.000000 0.000000 1.000000
-0.000000 0.000000 1.000000
-0.000000 -1.000000 0.000000
-0.000000 -1.000000 0.000000
 0.000000 -1.000000 0.000000
 0.000000 -1.000000 0.000000
 0.000000 -1.000000 0.000000
@@ -100,23 +110,17 @@
 1.000000 0.000000 0.000000
 1.000000 0.000000 0.000000
 1.000000 0.000000 0.000000
-1.000000 0.000000 0.000000
-1.000000 0.000000 0.000000
 0.000000 1.000000 0.000000
 0.000000 1.000000 0.000000
 0.000000 1.000000 0.000000
 0.000000 1.000000 0.000000
-0.000000 1.000000 0.000000
-0.000000 1.000000 0.000000
--1.000000 0.000000 0.000000
--1.000000 0.000000 0.000000
 -1.000000 0.000000 0.000000
 -1.000000 0.000000 0.000000
 -1.000000 0.000000 0.000000
 -1.000000 0.000000 0.000000
 </float_array>
           <technique_common>
-            <accessor source="#Box001-Normal0-array" count="36" stride="3">
+            <accessor source="#Box001-Normal0-array" count="24" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
@@ -125,30 +129,30 @@
         </source>
         <source id="Box001-UV0">
           <float_array id="Box001-UV0-array" count="48">
-1.000000 0.000000
-0.000000 0.000000
-1.000000 1.000000
-0.000000 1.000000
-0.000000 0.000000
-1.000000 0.000000
-0.000000 1.000000
-1.000000 1.000000
-0.000000 0.000000
-1.000000 0.000000
-0.000000 1.000000
-1.000000 1.000000
-0.000000 0.000000
-1.000000 0.000000
-0.000000 1.000000
-1.000000 1.000000
-0.000000 0.000000
-1.000000 0.000000
-0.000000 1.000000
-1.000000 1.000000
-0.000000 0.000000
-1.000000 0.000000
-0.000000 1.000000
-1.000000 1.000000
+0.324359 0.672720
+0.021432 0.672720
+0.324359 0.960570
+0.021432 0.960570
+0.338717 0.021432
+0.641644 0.021432
+0.338717 0.309282
+0.641644 0.309282
+0.021432 0.347076
+0.324359 0.347076
+0.324359 0.657815
+0.021432 0.657815
+0.656001 0.021432
+0.933294 0.021432
+0.933294 0.332171
+0.656001 0.332171
+0.021432 0.021432
+0.324359 0.021432
+0.324359 0.332171
+0.021432 0.332172
+0.338717 0.347076
+0.616010 0.347076
+0.616010 0.657815
+0.338717 0.657815
 </float_array>
           <technique_common>
             <accessor source="#Box001-UV0-array" count="24" stride="2">
@@ -159,14 +163,16 @@
         </source>
         <vertices id="Box001-VERTEX">
           <input semantic="POSITION" source="#Box001-POSITION"/>
+          <input semantic="NORMAL" source="#Box001-Normal0"/>
+          <input semantic="TEXCOORD" source="#Box001-UV0"/>
         </vertices>
-        <triangles count="12" material="_01 - Default"><input semantic="VERTEX" offset="0" source="#Box001-VERTEX"/><input semantic="NORMAL" offset="1" source="#Box001-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#Box001-UV0"/><p> 1 0 1 0 1 0 3 2 3 0 3 0 2 4 2 3 5 3 7 6 7 6 7 6 4 8 4 7 9 7 4 10 4 5 11 5 5 12 11 4 13 10 0 14 8 5 15 11 0 16 8 1 17 9 7 18 15 5 19 14 1 20 12 7 21 15 1 22 12 3 23 13 6 24 19 7 25 18 3 26 16 6 27 19 3 28 16 2 29 17 4 30 23 6 31 22 2 32 20 4 33 23 2 34 20 0 35 21</p></triangles>
+        <triangles count="12" material="_01 - Default"><input semantic="VERTEX" offset="0" source="#Box001-VERTEX"/><p> 1 0 3 0 2 3 7 6 4 7 4 5 10 11 8 10 8 9 14 15 12 14 12 13 18 19 16 18 16 17 22 23 20 22 20 21</p></triangles>
       </mesh>
     </geometry>
   </library_geometries>
   <library_visual_scenes>
     <visual_scene id="Test" name="Test">
-      <node name="Box001" id="Box001" sid="Box001"><matrix sid="matrix">0.025400 0.000000 0.000000 0.030470 0.000000 0.000000 0.025400 0.000000 0.000000 -0.025400 0.000000 0.015201 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#Box001-lib"><bind_material><technique_common><instance_material symbol="_01 - Default" target="#_01 - Default"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
+      <node name="Box001" id="Box001" sid="Box001"><matrix sid="matrix">1.000000 0.000000 0.000000 -4.275145 0.000000 0.000000 1.000000 0.000000 0.000000 -1.000000 0.000000 7.055626 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#Box001-lib"><bind_material><technique_common><instance_material symbol="_01 - Default" target="#_01 - Default"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
       <extra><technique profile="MAX3D"><frame_rate>30.000000</frame_rate></technique><technique profile="FCOLLADA"><start_time>0.000000</start_time><end_time>3.333333</end_time></technique></extra>
     </visual_scene>
   </library_visual_scenes>
