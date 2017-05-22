@@ -40,7 +40,7 @@
     	txLoader.load('C_01_L.jpg', function(tex){
     		// gltf models need this field to be false
     		// GLTFLoader does it for the diffuse texture automatically
-    		//tex.flipY = false;
+    		tex.flipY = false;
     		lightmap = tex;
     		loadingDone();
     	});
